@@ -17,7 +17,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     on<RegisterRequested>(_register);
     on<LogoutRequested>(_logout);
   }
-
+//user login  yes or no
   void _checkAuth(
     CheckAuth event,
     Emitter<AuthState> emit,
@@ -26,6 +26,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
 
     if (user != null) {
       emit(Authenticated(user));
+
     } else {
       emit(Unauthenticated());
     }
