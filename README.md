@@ -1,17 +1,83 @@
-# movie_app
+# CineNova - Movie Application
 
-A new Flutter project.
+## Project Overview
 
-## Getting Started
+CineNova is a Flutter movie application that allows users to discover movies, search for movies, view movie details, and manage their personal movie lists.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+* User Registration and Login
+* User Logout
+* Browse Movies
+* Search for Movies
+* View Movie Details
+* Favorites Movies
+* Watched Movies
+* Watching Movies
+* Want to Watch Movies
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Technologies
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* Flutter
+* Dart
+* Firebase Authentication
+* Cloud Firestore
+* TMDB API
+* BLoC / Cubit
+* REST API
+* Git and GitHub
+
+## Architecture
+
+The application follows a structured architecture that separates the presentation layer from the application logic and data operations.
+
+## State Management
+
+The application uses BLoC / Cubit for state management.
+
+## API
+
+The application uses the TMDB API to retrieve movie information such as movie titles, posters, ratings, release dates, and other movie details.
+
+## Authentication
+
+Firebase Authentication is used to provide user registration, login, logout, authentication state handling, and authentication error handling.
+
+## Database
+
+Cloud Firestore is used to store the user's movie lists:
+
+* Favorites
+* Watched
+* Watching
+* Want to Watch
+
+## Project Structure
+
+The project is organized into separate folders for the application's presentation, business logic, data, models, services, and other reusable components.
+
+## Setup Instructions
+
+1. Clone the repository.
+2. Open the project in Visual Studio Code.
+3. Run:
+
+
+flutter pub get
+
+
+4. Configure Firebase for the project.
+5. Configure the TMDB API.
+6. Run the application using:
+
+
+flutter run
+
+
+## Screenshots
+
+Screenshots of the final application will be added here.
+
+## Known Limitations
+
+Any known limitations or incomplete enhancements will be documented here.
